@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "noEmitOnError": true,
+    "outDir": "./dist",
+    "target": "ES2015",
+    "strict": true
+  },
+  "files": [
+    "array1.ts"
+  ]
+}
