@@ -39,4 +39,31 @@ const a3 = [0, 1] as const  // const断言，只读
 // 上面示例中，变量multi的类型是number[][]，表示它是一个二维数组，最底层的数组成员类型是number。
 var multi: number[][] = [[1, 2, 3], [23, 24, 25]]
 
+const obj = {
+	x: 'xxx',
+	y: 'yyy'
+}
+
+let { x: foo, y: bar } = obj
+console.log(foo);
+console.log(bar);
+
+class A {
+	constructor(
+		public a: number,
+		protected b: number,
+		private c: number,
+		readonly d: number
+	) { }
+
+	toString(): string {
+		return '' + this.a + this.b + this.c + this.d
+	}
+}
+
+const classA = new A(1, 2, 3, 4)
+
+console.log(classA);
+
+
 
