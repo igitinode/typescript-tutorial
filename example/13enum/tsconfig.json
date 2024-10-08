@@ -3,7 +3,8 @@
     "noEmitOnError": true,
     "outDir": "./dist",
     "target": "ES2015",
-    "strict": true
+    "strict": true,
+    "preserveConstEnums": true // enmu 常量加了 const字段 运行时还能访问Enum结构
   },
   "files": ["enum1.ts"]
 }
